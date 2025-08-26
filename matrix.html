@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matrix Calculator</title>
+  <link rel="stylesheet" href="matrix.css">
+</head>
+<body>
+  <h1>Matrix Calculator</h1>
+
+  <div class="container">
+    <div class="matrix-input">
+      <h2>Matrix A</h2>
+      <textarea id="matrixA" placeholder="Enter matrix A (rows separated by new line, values by space)&#10;Example:&#10;1 2&#10;3 4"></textarea> 
+    </div>
+
+    <div class="matrix-input">
+      <h2>Matrix B</h2>
+      <textarea id="matrixB" placeholder="Enter matrix B (same format)&#10;Example:&#10;5 6&#10;7 8"></textarea>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="calculate('add')">A + B</button><br>
+    <button onclick="calculate('sub')">A - B</button><br>
+    <button onclick="calculate('mul')">A × B</button>
+
+  </div>
+
+  <h2>Result</h2>
+  <pre id="result"></pre>
+
+  <script src="matrix.js"></script>
+</body>
+</html>
